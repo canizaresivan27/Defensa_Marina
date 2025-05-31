@@ -433,7 +433,7 @@ class EnemyInvasion:
         self.enemies.draw(self.screen)
         
         if hasattr(self, 'boss_active') and self.boss_active:
-           
+            self.screen.blit(self.boss.image, self.boss.rect)
      
             for bullet in self.boss.bullets.sprites():
                 bullet.draw_bullet()
